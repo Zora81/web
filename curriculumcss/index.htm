@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum</title>
+  <style>
+    body {
+      background-color: olive;
+    }
+
+    #datospersonales h1,
+    #educacion h1,
+    #experiencialaboral h1,
+    #habilidades h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      background: rgb(101, 134, 96);
+    }
+    #datospersonales:hover h1,
+    #educacion:hover h1,
+    #experiencialaboral:hover h1,
+    #habilidades:hover h1
+    {color:rgb(189,235,73);
+    box-shadow: 1px 1px 2px black;
+    margin-left: -40px;
+
+}
+
+    #datospersonales h1 {
+      background: url("hogar.png"), linear-gradient(90deg, rgba(101, 134, 96, 1) 0%, rgba(162, 193, 157, 1) 100%);
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 30px;
+
+    }
+
+    #educacion h1 {
+      background: url("gorro-de-graduacion.png"), linear-gradient(90deg, rgba(101, 134, 96, 1) 0%, rgba(162, 193, 157, 1) 100%);
+
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 30px;
+
+    }
+
+    #experiencialaboral h1 {
+      background: url("monedas.png"), linear-gradient(90deg, rgba(101, 134, 96, 1) 0%, rgba(162, 193, 157, 1) 100%);
+
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 30px;
+
+    }
+
+    #habilidades h1 {
+      background: url("comprobacion-de-lista.png"), linear-gradient(90deg, rgba(101, 134, 96, 1) 0%, rgba(162, 193, 157, 1) 100%);
+
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 30px;
+
+    }
+
+    #datospersonales,
+    #educacion,
+    #experiencialaboral,
+    #habilidades {
+      width: 60%;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgb(101, 100, 100);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    #datospersonales {
+      background-color: #5b9252;
+
+    }
+
+    #datospersonales img {
+      border: 2px solid white;
+      border-radius: 100%;
+    }
+
+    #educacion {
+      background-color: #678c61;
+
+    }
+
+    #experiencialaboral {
+      background-color: #738670;
+
+    }
+
+    #habilidades {
+      background-color: #9fbc9a;
+
+    }
+    #habilidades ul {list-style-image: url("estrella.png");}
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <section id="datospersonales">
+      <h1>Datos personales</h1>
+      <img src="empleado-de-oficina.png" alt="Mi foto" title="Mi foto">
+      <p><b>Nombre:</b> Luis Pérez</p>
+      <p><b>Fecha de Nacimiento:</b> 1 de enero de 1990</p>
+      <p><b>Dirección:</b> Calle Camelias 123, Vigo, España</p>
+      <p><b>Teléfono:</b> 123-456-7890</p>
+      <p><b>Correo Electrónico:</b> <a href="mailto:luisperez@notengo.com">luisperez@notengo.com</a></p>
+    </section>
+    <section id="educacion">
+      <h1>Educación</h1>
+      <p><b>Universidad:</b> Universidad de Vigo, España</p>
+      <p><b>Título:</b> Licenciatura en Informática</p>
+      <p><b>Año de Graduación:</b> 2012</p>
+    </section>
+    <section id="experiencialaboral">
+      <h1>Experiencia laboral</h1>
+      <h2>Systems S.A.</h2>
+      <p><b>Puesto:</b> Desarrollador Web</p>
+      <p><b>Periodo:</b> Enero 2018 - Presente</p>
+      <p><b>Descripción:</b> Desarrollado y mantenimiento de la web</p>
+      <hr>
+      <h2>Micro S.A.</h2>
+      <p><b>Puesto:</b> Desarrollador Web</p>
+      <p><b>Periodo:</b> Enero 2013 - 2018</p>
+      <p><b>Descripción:</b> Desarrollado y mantenimiento de la web</p>
+    </section>
+    <section id="habilidades">
+      <h1>Habilidades</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

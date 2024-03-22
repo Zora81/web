@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @font-face {
+            font-family: "neutrons";
+            src: url(fuentes/NeutronsDemoRegular.ttf);
+        }
+
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            font-size: 100%;
+            /* Mismo tamaño de letra para todo */
+        }
+
+        body {
+            background-image: url(imagenes/fondo.jpg);
+            background-size: 40%;
+        }
+
+        main {
+            /* Para poder centrar el contenido debemos adarle un width y un margen
+        derecho e izquerdo auto (no haría falta con el superior ni inferior) */
+            width: 70%;
+            margin: auto;
+        }
+
+
+
+
+        header {
+            margin-top: 50px;
+        }
+
+        header h1 {
+            text-transform: uppercase;
+            font-family: neutrons;
+            color: rgb(37, 101, 220);
+            font-size: 3em;
+            text-shadow: 1px 1px 1px black, 2px 2px 6px yellow;
+            /* Pone las letras en mayúscula */
+            text-align: center;
+
+            /* Podemos poner varias sombras separadas por comas, usar valores negativos ...*/
+
+
+        }
+
+        .mensaje,
+        .info-usuario,
+        .contenido-mensaje {
+            /* Por defecto, el padding y borde se suma al width que le demos a un elemento,
+        lo que puede darnos problemas. Con esta propiedad ya no los suma */
+            box-sizing: border-box;
+        }
+
+        .mensaje {
+            background-color: rgb(135, 187, 154);
+            margin: auto;
+            border: 1px green solid;
+
+            border-radius: 10px;
+
+
+            overflow: hidden;
+            box-shadow: 10px 1px 20px grey;
+            margin-bottom: 20px;
+        }
+
+        .info-usuario {
+            background-color: rgb(135, 187, 154);
+            text-align: center;
+            width: 20%;
+            max-width: 300px;
+            /* Para establecer un ancho máximo */
+            padding: 20px 0;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+                sans-serif;
+            background-image: url(imagenes/lado.png);
+            background-repeat: no-repeat;
+            background-size: 20%;
+            /* Para que sea una columna */
+            float: left;
+        }
+
+        .info-usuario p:first-of-type {
+            font-weight: bold;
+        }
+
+        .info-usuario p {
+            margin-top: 0.7em;
+        }
+
+        .contenido-mensaje {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            border-left: 2px solid rgb(6, 97, 16);
+            background-color: rgb(236, 234, 234);
+            /* Para la segunda columna */
+            float: left;
+            /* A la primera columna le hemos dado un width de un 20% y, como hemos usado
+        box-sizing: border box, podemos darle un 80% a esta sin problema de que no
+        vaya a caber */
+            width: 80%;
+        }
+
+        .contenido-mensaje header {
+            background-color: rgb(3, 78, 6);
+            color: white;
+            text-align: right;
+            padding: 10px;
+            font-size: 0.9em;
+            /* Un 10% menos */
+            /* Como anteriormente arriba dimos un margin-top del 50% a la etiqueta header, este header
+        también se verá afectado. Por ello le ponemos 0 */
+            margin-top: 0;
+        }
+
+        .contenido-mensaje p {
+            color: rgb(25, 123, 69);
+            text-align: justify;
+            padding: 1em;
+        }
+
+        .contenido-mensaje footer {
+            /* Para la líena entre el pie y el texto */
+            border-top: 2px green dotted;
+            text-align: right;
+            
+        }
+
+        .contenido-mensaje footer a {
+            /* Un enlace es de tipo en línea, con lo que no podemos darle márgenes superiores,
+        anchos, altos, .... Por ello lo convertimos a tipo bloque en línea */
+            display: inline-block;
+            margin: 10px;
+            padding: 5px;
+            color: green;
+            text-decoration: none;
+            /* Quitamos el subrayado del enlace */
+            background-color: lightgray;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .contenido-mensaje footer a:hover {
+            background-color: rgb(234, 235, 236);
+        }
+
+        .respuesta {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FORO ELECTRONICA</h1>
+    </header>
+    <main>
+        <section class="mensaje clearfix">
+
+            <div class="info-usuario">
+                <img src="imagenes/Hopstarter-Face-Avatars-Female-Face-FA-3.64.png" alt="avatar">
+                <p>
+                    Sandra Alonso</p>
+
+                <p>35 mensajes</p>
+            </div>
+
+            <div class="contenido-mensaje">
+                <header>
+                    <time datetime="2024-03-21">Fecha: 21/03/2024</time>
+                </header>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sequi eaque! Dolorem a
+                    veniam, maxime
+                    delectus quo qui pariatur perspiciatis dolore commodi incidunt adipisci alias magni velit aspernatur
+                    dolores nostrum, necessitatibus laboriosam perferendis corporis enim iure. Officiis hic quis a
+                    veniam
+                    corrupti facere animi impedit aperiam quas non ab consectetur, et ad voluptate aliquam reiciendis
+                    maiores quae fugit laborum. Molestiae reiciendis fugit doloribus repellat explicabo laudantium,
+                    necessitatibus aut eius eos id porro obcaecati inventore hic, veniam impedit animi illo incidunt
+                    tempora! Officiis omnis autem quidem, sint porro eos dolorum officia explicabo labore dolore.
+                    Delectus
+                    praesentium a laboriosam provident veritatis non.</p>
+                <footer>
+                    <a href="">reponder</a>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
