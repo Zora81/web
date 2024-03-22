@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libros</title>
+    <style>
+        body {
+            background-color: rgb(147, 142, 142);
+        }
+
+        header {
+            background-color: rgb(41, 151, 155);
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            background-image: url(fotos/biblioteca.png);
+            background-repeat: no-repeat;
+            background-position: bottom 20px right 20px;
+
+        }
+
+
+        .libro {
+            box-shadow: 10px 1px 20px rgb(39, 78, 94);
+            border-radius: 30px;
+            text-align: left;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 20px;
+            padding-left: 1em;
+            padding-bottom: 1em;
+            padding-top: 10px;
+            background-color: rgb(41, 151, 155);
+        }
+        .libro img{
+            border-radius: 5px;
+            width: 70px;
+        }
+
+        .libro .tex {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: smaller;
+            text-align: justify;
+            padding-right: 10px;
+        }
+
+        .libro h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: rgb(247, 248, 242)
+        }
+
+        #precio1 {
+            border: solid black;
+            width: 90px;
+            text-align: center;
+            background-color: rgb(114, 152, 152);
+            color: white;
+
+        }
+
+        #precio2 {
+            border: solid black;
+            width: 90px;
+            text-align: center;
+            background-color: rgb(114, 152, 152);
+            color: white;
+
+        }
+
+        #precio3 {
+            border: solid black;
+            width: 90px;
+            text-align: center;
+            background-color: rgb(114, 152, 152);
+            color: white;
+
+        }
+
+
+
+        footer {
+            background-color: rgb(41, 151, 155);
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            font-style: italic;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mi Biblioteca</h1>
+
+    </header>
+    <main>
+        <section class="libro">
+            <img src="fotos/libro1.jpg" alt="libro">
+            <h2 id="im1">La niebla de los bosques</h2>
+            <hr width="95%" color="lightgrey">
+            <p> <strong>Autor:</strong>J. García</p>
+            <p><strong> Año:</strong>2023</p>
+            <p class="tex"><strong> Descripción:</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+                natus
+                laudantium inventore voluptas molestiae dicta quod, culpa facere, impedit neque quo, magni sed saepe
+                quas blanditiis optio architecto non est iusto ipsam porro laborum unde repellat. Atque suscipit
+                mollitia tenetur sint itaque nesciunt, repellat necessitatibus vero dolorum non cumque sit inventore
+                quos, minus expedita exercitationem quidem perferendis voluptas adipisci sed deserunt! Cupiditate esse
+                doloremque non ad est vitae excepturi vel, sunt iste, minima reprehenderit, doloribus magnam. Corporis,
+                maxime et dolores expedita, deserunt vel beatae itaque omnis veritatis aperiam magnam ad temporibus
+                consequatur ut quia alias incidunt error repudiandae id minus?</p>
+            <p id="precio1">Precio: 17 €</p>
+        </section>
+        <section class="libro">
+            <img src="fotos/libro2.jpg" alt="libro">
+            <h2 id="im2">El camino de la guerrera</h2>
+            <hr width="95%" color="lightgrey">
+            <p> <strong>Autor:</strong>Encarni Herrera</p>
+            <p><strong> Año:</strong>2022</p>
+            <p class="tex"><strong> Descripción:</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+                natus
+                laudantium inventore voluptas molestiae dicta quod, culpa facere, impedit neque quo, magni sed saepe
+                quas blanditiis optio architecto non est iusto ipsam porro laborum unde repellat. Atque suscipit
+                mollitia tenetur sint itaque nesciunt, repellat necessitatibus vero dolorum non cumque sit inventore
+                quos, minus expedita exercitationem quidem perferendis voluptas adipisci sed deserunt! Cupiditate esse
+                doloremque non ad est vitae excepturi vel, sunt iste, minima reprehenderit, doloribus magnam. Corporis,
+                maxime et dolores expedita, deserunt vel beatae itaque omnis veritatis aperiam magnam ad temporibus
+                consequatur ut quia alias incidunt error repudiandae id minus?</p>
+            <p id="precio2">Precio: 20 €</p>
+        </section>
+        <section class="libro">
+            <img src="fotos/libro3.jpg" alt="libro">
+            <h2 id="im3">Matar a un ruiseñor</h2>
+            <hr width="95%" color="lightgrey">
+            <p> <strong>Autor:</strong>Harper Lee</p>
+            <p><strong> Año:</strong>1970</p>
+            <p class="tex"><strong> Descripción:</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+                natus
+                laudantium inventore voluptas molestiae dicta quod, culpa facere, impedit neque quo, magni sed saepe
+                quas blanditiis optio architecto non est iusto ipsam porro laborum unde repellat. Atque suscipit
+                mollitia tenetur sint itaque nesciunt, repellat necessitatibus vero dolorum non cumque sit inventore
+                quos, minus expedita exercitationem quidem perferendis voluptas adipisci sed deserunt! Cupiditate esse
+                doloremque non ad est vitae excepturi vel, sunt iste, minima reprehenderit, doloribus magnam. Corporis,
+                maxime et dolores expedita, deserunt vel beatae itaque omnis veritatis aperiam magnam ad temporibus
+                consequatur ut quia alias incidunt error repudiandae id minus?</p>
+            <p id="precio3">Precio: 15 €</p>
+        </section>
+    </main>
+    <footer>
+        <p>C/Gran Vía, 125,</p>
+        <p>entresuelo
+            36208 - Vigo</p>
+    </footer>
+
+</body>
+
+</html>

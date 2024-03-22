@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las tartas de la abuela</title>
+    <style>
+         .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            font-size: 100%;
+        }
+
+        body {
+            background-color: plum;
+        }
+
+        main {
+            width: 70%;
+            margin: auto;
+        }
+
+        @font-face {
+            font-family: "fuente";
+            src: url(fuentes/Skincake.ttf)
+        }
+
+        header {
+            background-image: url(imagenes/abuela.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 10px;
+            background-color: purple;
+
+
+
+
+        }
+
+        header h1 {
+            font-family: fuente;
+            color: pink;
+            text-align: center;
+            font-size: 70px;
+            text-shadow: 5px 1px 2px black;
+        }
+
+        .titulillo1 {
+            text-align: center;
+            color: rgb(206, 40, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #pasteleria img {
+
+            border-radius: 2000px;
+            width: 30%;
+            display: block;
+            margin: auto;
+        }
+
+        .titulillo2 {
+            text-align: center;
+            color: rgb(206, 40, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .menu {
+            width: 40%;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(255, 196, 248);
+            border: 3px solid rgb(224, 21, 166);
+            border-radius: 30px;
+            overflow: hidden;
+            float: left;
+            margin-left: 20px;
+            margin-top: 30px;
+
+        }
+
+        .menu:hover {
+
+            border: 3px solid rgb(255, 196, 248);
+            
+
+
+        }
+
+        .foto img {
+
+            display: block;
+            margin: auto;
+
+
+        }
+
+        footer {
+            background-color: rgb(224, 21, 166);
+            text-align: right;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+           margin-top: 10px;
+            font-style: italic;
+            color: white;
+        }
+        
+
+        .nombre {
+            color: rgb(224, 21, 166);
+            text-align: center;
+            border-bottom: 3px dashed rgb(224, 21, 166);
+            padding: 10px;
+            font-size: 1em;
+
+        }
+
+        .texto {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(237, 50, 81);
+            font-size: 1em;
+            text-align: right;
+            padding: 10px;
+        }
+
+        .carrito {
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <header>
+            <h1>las tartas de la abuela</h1>
+        </header>
+        <div class="titulillo1">
+            <p>Vendiendo alegría desde 1950</p>
+        </div>
+
+        <div id="pasteleria">
+            <img src="imagenes/pasteleria.jpg" alt="imagen pasteleria">
+        </div>
+        <div class="titulillo2">
+            <p>Nuestros productos destacados</p>
+        </div>
+        <main class="clearfix">
+        <section class="menu">
+            <div class="foto">
+                <img src="imagenes/tarta_chocolate.jpg"  width="500" alt="tarta de tarta chocolate">
+            </div>
+            <div class="nombre">
+                <p>tarta de chocola</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit non voluptatem quaerat
+                    distinctio
+                    culpa nulla? Temporibus, cumque nemo impedit earum repudiandae mollitia ex possimus maiores,
+                    laboriosam
+                    eaque dolorum recusandae labore.</p>
+            </div>
+            <nav class="carrito">
+                <a href=""><img src="imagenes/carrito.png" alt="carrito de compra"></a>
+
+            </nav>
+        </section>
+        <section class="menu">
+            <div class="foto">
+                <img src="imagenes/Gugelhupf.jpg"  width="500" alt="tarta Gugelhupf">
+            </div>
+            <div class="nombre">
+                <p>Gugelhupf</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit non voluptatem quaerat
+                    distinctio
+                    culpa nulla? Temporibus, cumque nemo impedit earum repudiandae mollitia ex possimus maiores,
+                    laboriosam
+                    eaque dolorum recusandae labore.</p>
+            </div>
+            <nav class="carrito">
+                <a href=""><img src="imagenes/carrito.png" alt="carrito de compra"></a>
+
+            </nav>
+        </section>
+        <section class="menu">
+            <div class="foto">
+                <img src="imagenes/tarta_frambruesa.jpg"  width="500" alt="tarta de tarta frambruesa">
+            </div>
+            <div class="nombre">
+                <p>Tarta de frambruesa</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit non voluptatem quaerat
+                    distinctio
+                    culpa nulla? Temporibus, cumque nemo impedit earum repudiandae mollitia ex possimus maiores,
+                    laboriosam
+                    eaque dolorum recusandae labore.</p>
+            </div>
+            <nav class="carrito">
+                <a href=""><img src="imagenes/carrito.png" alt="carrito de compra"></a>
+
+            </nav>
+        </section>
+        <section class="menu">
+            <div class="foto">
+                <img src="imagenes/tarta_queso.jpg" width="500" alt="Tarta de queso">
+            </div>
+            <div class="nombre">
+                <p>Tarta de queso</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit non voluptatem quaerat
+                    distinctio
+                    culpa nulla? Temporibus, cumque nemo impedit earum repudiandae mollitia ex possimus maiores,
+                    laboriosam
+                    eaque dolorum recusandae labore.</p>
+            </div>
+            <nav class="carrito">
+                <a href=""><img src="imagenes/carrito.png" alt="carrito de compra"></a>
+
+            </nav>
+        </section>
+    </main>
+        <section class="pie">
+        <footer>
+            <p> Las tartas de la abuela</p>
+            <p>Calle Sin número 21</p>
+            <p>36432 - Porteliña</p>
+        </footer>
+    </section>
+    
+
+</body>
+
+</html>
