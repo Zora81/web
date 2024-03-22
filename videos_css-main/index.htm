@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            font-size: 100%;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        html{
+            height: 100%;
+        }
+
+        body {
+            background-color: rgb(20, 19, 19);
+            background: linear-gradient(185deg, rgba(20, 19, 19, 1) 0%, rgba(198, 195, 193, 1) 100%);
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        @font-face {
+            font-family: "cine";
+            src: url(cinema_st.ttf)
+        }
+
+        header p {
+            font-family: "cine";
+            font-size: 70px;
+            text-align: center;
+            margin: auto;
+            color: rgba(255, 255, 255, 0.702)
+        }
+        main{
+            width: 97%;
+            margin: auto;
+            text-align: center;
+        }
+
+        section {
+            box-shadow: 10px 1px 20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            width: 300px;
+            margin-left: 20px;
+            margin-top: 30px;
+            overflow: hidden;
+            float: left;
+
+
+
+
+
+        }
+
+        .titulo {
+            color: red;
+            background-color: white;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+
+
+
+
+        }
+
+        .texto {
+            background-color: rgba(72, 72, 155, 0.22);
+        }
+
+        .estrella {
+
+
+            background-image: url(estrella.png);
+            width: 24px;
+            background-repeat: repeat-x;
+            background-position: bottom left;
+            padding-top: 30px;
+            height: 24px;
+
+        }
+
+        .estrella2 {
+
+            width: 48px;
+        }
+
+        .estrella3 {
+            width: 72px;
+        }
+
+        .estrella4 {
+            width: 96px;
+        }
+
+
+
+        .texto p {
+            padding: 10px
+        }
+
+        .informacion {
+            background-color: rgb(36, 36, 45);
+            box-shadow: 10px;
+
+
+
+        }
+
+        .info {
+            border-top: solid white;
+
+
+
+        }
+
+        .info a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            display: inline-block;
+            background-color: rgb(44, 44, 56);
+
+
+
+        }
+
+        .info a:hover {
+            background-color: rgb(234, 235, 236);
+        }
+
+        .informacion .logo {
+            background-position: right;
+        }
+
+        .logo a:hover {
+            background-color: rgb(234, 235, 236);
+        }
+        iframe{
+            display: block;
+        }
+        .logo{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Trailes 2024</p>
+    </header>
+    <main>
+        <section class="clearfix">
+            <nav class="video">
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/kxyyKU8rgaU?si=P0su0Duch8PRKhsi"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </nav>
+            <div class="titulo">
+                <p>Deadpool &AMP; Wolverine</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse quaerat repellat ipsa ab rem
+                    sequi
+                    laboriosam. Maxime, dolorum quam. Dolores in deleniti quaerat debitis deserunt exercitationem
+                    voluptatem
+                    hic sint!</p>
+                <div class="estrella estrella4">
+
+                </div>
+            </div>
+            <div class="informacion">
+                <footer class="info">
+                    <a href="">+Informacion</a>
+                </footer>
+                <footer class="logo">
+                    <a href=""> <img src="facebook.svg" alt="logo facebook"></a>
+                    <a href=""><img src="twitter.svg" alt="logo twitter"></a>
+                </footer>
+            </div>
+        </section>
+        <section>
+            <nav class="video">
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/vBrkqgRpNLQ?si=UnCihR5GneJIoc7F"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </nav>
+            <div class="titulo">
+                <p>La primera profecia</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse quaerat repellat ipsa ab rem
+                    sequi
+                    laboriosam. Maxime, dolorum quam. Dolores in deleniti quaerat debitis deserunt exercitationem
+                    voluptatem
+                    hic sint!</p>
+                <div class="estrella estrella2">
+
+                </div>
+            </div>
+            <div class="informacion">
+                <footer class="info">
+                    <a href="">+Informacion</a>
+                </footer>
+                <footer class="logo">
+                    <a href=""> <img src="facebook.svg" alt="logo facebook"></a>
+                    <a href=""><img src="twitter.svg" alt="logo twitter"></a>
+                </footer>
+            </div>
+        </section>
+        <section class="clearfix">
+            <nav class="video">
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/sBU8ejvW6fM?si=dAdpDVVmWtLR5cl7"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </nav>
+            <div class="titulo">
+                <p>Constantine2</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse quaerat repellat ipsa ab rem
+                    sequi
+                    laboriosam. Maxime, dolorum quam. Dolores in deleniti quaerat debitis deserunt exercitationem
+                    voluptatem
+                    hic sint!</p>
+                <div class="estrella estrella2">
+
+                </div>
+            </div>
+            <div class="informacion">
+                <footer class="info">
+                    <a href="">+Informacion</a>
+                </footer>
+                <footer class="logo">
+                    <a href=""> <img src="facebook.svg" alt="logo facebook"></a>
+                    <a href=""><img src="twitter.svg" alt="logo twitter"></a>
+                </footer>
+            </div>
+        </section>
+        <section class="clearfix">
+            <nav class="video">
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/nPF1881DaJk?si=6DXQEhieDOU94ll_"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </nav>
+            <div class="titulo">
+                <p>Nuevo reino</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse quaerat repellat ipsa ab rem
+                    sequi
+                    laboriosam. Maxime, dolorum quam. Dolores in deleniti quaerat debitis deserunt exercitationem
+                    voluptatem
+                    hic sint!</p>
+                <div class="estrella estrella4">
+
+                </div>
+            </div>
+            <div class="informacion">
+                <footer class="info">
+                    <a href="">+Informacion</a>
+                </footer>
+                <footer class="logo">
+                    <a href=""> <img src="facebook.svg" alt="logo facebook"></a>
+                    <a href=""><img src="twitter.svg" alt="logo twitter"></a>
+                </footer>
+            </div>
+        </section>
+        <section class="clearfix">
+            <nav class="video">
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/ASrbrFuagHQ?si=9NNmZjfxCi2ZVxZy"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </nav>
+            <div class="titulo">
+                <p>The mummy: resurrection2</p>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse quaerat repellat ipsa ab rem
+                    sequi
+                    laboriosam. Maxime, dolorum quam. Dolores in deleniti quaerat debitis deserunt exercitationem
+                    voluptatem
+                    hic sint!</p>
+                <div class="estrella estrella3">
+
+                </div>
+            </div>
+            <div class="informacion">
+                <footer class="info">
+                    <a href="">+Informacion</a>
+                </footer>
+                <footer class="logo">
+                    <a href=""> <img src="facebook.svg" alt="logo facebook"></a>
+                    <a href=""><img src="twitter.svg" alt="logo twitter"></a>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
